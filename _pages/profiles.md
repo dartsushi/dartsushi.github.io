@@ -16,11 +16,4 @@ profiles:
     more_info: >
       <p>123 building S9</p>
       <p>Gent, Belgium</p>
-  - align: left
-    image: FOTOau.jpg
-    content: about_einstein.md
-    image_circular: false # crops the image to make it circular
-    more_info: >
-      <p>123 building S9</p>
-      <p>Gent, Belgium</p>
 ---
