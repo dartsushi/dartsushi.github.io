@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Ghent University</a>. 
+subtitle: <a href='https://quantumghent.github.io/'>Ghent University</a>. 
 
 profile:
   align: right
