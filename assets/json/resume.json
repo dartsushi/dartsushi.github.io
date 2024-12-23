@@ -28,10 +28,10 @@
   ],
   "education": [
     {
-      "position": "Ph.D. student",
       "institution": "University of Tokyo, Tokyo, Japan",
-      "startDate": "2021",
-      "endDate": "2024",
+      "studyType": "PhD",
+      "startDate": "2021-04-01",
+      "endDate": "2024-03-31",
     }
   ],
   "awards": [
