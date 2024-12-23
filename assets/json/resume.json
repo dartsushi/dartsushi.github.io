@@ -28,7 +28,8 @@
   ],
   "education": [
     {
-      "institution": "University of Tokyo, Tokyo, Japan",
+      "institution": "University of Tokyo",
+      "location": "Tokyo, Japan",
       "studyType": "PhD",
       "startDate": "2021-04-01",
       "endDate": "2024-03-31",
