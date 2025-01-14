@@ -48,7 +48,7 @@
 - title: Academic Interests
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Tensor network
       items:
         - Description 1.
         - Description 2.
