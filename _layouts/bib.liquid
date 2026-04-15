@@ -181,6 +181,13 @@
     <div class="periodical">
       {{ entry.note | strip }}
     </div>
+    {% assign show_summary = false %}
+    {% if page.url == '/publications/' or page.permalink == '/publications/' %}
+      {% assign show_summary = true %}
+    {% endif %}
+    {% if entry.summary and show_summary %}
+      <div class="paper-summary">{{ entry.summary }}</div>
+    {% endif %}
 
     <!-- Links/Buttons -->
     <div class="links">

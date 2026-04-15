@@ -806,6 +806,15 @@ footer.sticky-bottom {
         }
       }
 
+      .paper-summary {
+        margin: 0.8rem 0 0.95rem;
+        padding-left: 0.95rem;
+        border-left: 2px solid var(--global-theme-color);
+        color: var(--global-text-color-light);
+        font-size: 0.96rem;
+        line-height: 1.7;
+      }
+
       .badges {
         padding-bottom: 0.5rem;
         span {

@@ -23,17 +23,11 @@
 - title: Experience
   type: time_table
   contents:
-    - title: Postdoc Fellow
+    - title: FWO Junior Postdoctoral Fellow
       institution: Ghent University
-      year: 2024 - Present
+      year: Oct. 2025 - Present
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    
+        - Department of Physics and Astronomy
 
 - title: Honors and Awards
   type: time_table

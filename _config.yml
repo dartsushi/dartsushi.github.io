@@ -8,14 +8,14 @@ middle_name:
 last_name: Ueda
 contact_note: >
   The best way to reach me is by email.
-description: > 
+description: >
   Personal academic website of Atsushi Ueda, featuring papers, recent research updates, and links to publications.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
   Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
 keywords: tensor networks, renormalization group, critical phenomena, field theory, quantum many-body physics
-lang: en 
+lang: en
 icon: FOTOau.jpg
 
 URL: https://dartsushi.github.io

@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Postdoctoral researcher in theoretical physics at <a href='https://quantumghent.github.io/'>Ghent University</a>.
+subtitle: FWO junior postdoctoral fellow in theoretical physics at <a href='https://quantumghent.github.io/'>Ghent University</a> since October 2025.
 
 profile:
   align: right
@@ -20,12 +20,17 @@ social: true # includes social icons at the bottom of the page
 <div class="landing-page">
   <section class="hero-panel">
     <p class="hero-kicker">Tensor networks, critical phenomena, and field theory</p>
-    <h2 class="hero-lead">I work on analytical and numerical approaches to strongly correlated and field-theoretic systems.</h2>
+    <h2 class="hero-lead">I work on analytical and numerical methods for strongly correlated systems, critical phenomena, and quantum field theory.</h2>
     <p class="hero-summary">
-      My research focuses on tensor-network methods for critical phenomena, renormalization group flows, and quantum many-body
-      physics. Recent work spans finite-entanglement scaling, lattice and gauge-theory problems, and practical tensor-network
-      algorithms.
+      My research combines tensor-network methods, renormalization-group ideas, and field theory to study critical phenomena and
+      quantum many-body systems. Recent work spans finite-entanglement scaling, lattice and gauge-theory problems, and practical
+      tensor-network algorithms.
     </p>
+    <div class="hero-meta" aria-label="Current position">
+      <span class="hero-chip">FWO junior postdoctoral fellow</span>
+      <span class="hero-chip">Ghent University</span>
+      <span class="hero-chip">Since Oct. 2025</span>
+    </div>
     <div class="hero-actions">
       <a class="landing-button primary" href="{{ '/publications/' | relative_url }}">Browse papers</a>
       <a
@@ -43,7 +48,7 @@ social: true # includes social icons at the bottom of the page
   <section class="highlight-strip">
     <article class="highlight-card">
       <p class="highlight-label">Current</p>
-      <p>Postdoctoral research at Ghent University on tensor-network methods and universal physics.</p>
+      <p>FWO junior postdoctoral fellowship at Ghent University, started in October 2025, on tensor-network methods and universal physics.</p>
     </article>
     <article class="highlight-card">
       <p class="highlight-label">Research Themes</p>

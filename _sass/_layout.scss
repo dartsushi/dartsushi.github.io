@@ -6,8 +6,7 @@ body {
   padding-bottom: 70px;
   color: var(--global-text-color);
   background-color: var(--global-bg-color);
-  background-image:
-    radial-gradient(circle at top left, rgba(15, 118, 110, 0.12), transparent 28rem),
+  background-image: radial-gradient(circle at top left, rgba(15, 118, 110, 0.12), transparent 28rem),
     radial-gradient(circle at top right, rgba(180, 83, 9, 0.09), transparent 22rem);
   font-family: "Manrope", sans-serif;
 
@@ -22,8 +21,7 @@ body {
 }
 
 html[data-theme="dark"] body {
-  background-image:
-    radial-gradient(circle at top left, rgba(130, 214, 202, 0.14), transparent 28rem),
+  background-image: radial-gradient(circle at top left, rgba(130, 214, 202, 0.14), transparent 28rem),
     radial-gradient(circle at top right, rgba(245, 158, 11, 0.08), transparent 24rem);
 }
 
@@ -73,8 +71,8 @@ body.sticky-bottom-footer {
 
 .landing-page {
   display: grid;
-  gap: 1.4rem;
-  padding-top: 0.5rem;
+  gap: 1.6rem;
+  padding-top: 0.7rem;
 }
 
 .hero-panel,
@@ -87,12 +85,12 @@ body.sticky-bottom-footer {
 
 .hero-panel {
   position: relative;
+  display: grid;
+  gap: 0.95rem;
   overflow: hidden;
-  padding: 2rem;
-  border-radius: 30px;
-  background:
-    linear-gradient(135deg, rgba(15, 118, 110, 0.15), rgba(255, 255, 255, 0.9) 58%),
-    var(--global-card-bg-color);
+  padding: 2.25rem;
+  border-radius: 32px;
+  background: linear-gradient(135deg, rgba(15, 118, 110, 0.13), rgba(255, 255, 255, 0.92) 54%), var(--global-card-bg-color);
 
   &::after {
     content: "";
@@ -107,14 +105,12 @@ body.sticky-bottom-footer {
 }
 
 html[data-theme="dark"] .hero-panel {
-  background:
-    linear-gradient(135deg, rgba(130, 214, 202, 0.16), rgba(13, 23, 32, 0.92) 62%),
-    var(--global-card-bg-color);
+  background: linear-gradient(135deg, rgba(130, 214, 202, 0.16), rgba(13, 23, 32, 0.92) 62%), var(--global-card-bg-color);
 }
 
 .hero-kicker,
 .highlight-label {
-  margin-bottom: 0.65rem;
+  margin-bottom: 0;
   color: var(--global-theme-color);
   font-size: 0.76rem;
   font-weight: 800;
@@ -124,29 +120,49 @@ html[data-theme="dark"] .hero-panel {
 
 .hero-lead,
 .section-heading {
-  margin-bottom: 0.7rem;
+  margin-bottom: 0;
   font-family: "Newsreader", serif;
   letter-spacing: -0.03em;
 }
 
 .hero-lead {
-  max-width: 12ch;
-  font-size: clamp(2rem, 4.2vw, 3.5rem);
-  line-height: 0.95;
+  max-width: 15ch;
+  font-size: clamp(1.75rem, 3vw, 2.85rem);
+  line-height: 1.02;
 }
 
 .hero-summary {
-  max-width: 42rem;
+  max-width: 44rem;
   margin-bottom: 0;
-  font-size: 1.02rem;
-  line-height: 1.75;
+  color: var(--global-text-color-light);
+  font-size: 1rem;
+  line-height: 1.72;
+}
+
+.hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.hero-chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.1rem;
+  padding: 0.45rem 0.8rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.58);
+  color: var(--global-text-color-light);
+  font-size: 0.86rem;
+  font-weight: 600;
 }
 
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
-  margin-top: 1.4rem;
+  margin-top: 0.2rem;
 }
 
 .landing-button {
@@ -182,6 +198,10 @@ html[data-theme="dark"] .hero-panel {
 
 html[data-theme="dark"] .landing-button {
   background: rgba(13, 23, 32, 0.7);
+}
+
+html[data-theme="dark"] .hero-chip {
+  background: rgba(13, 23, 32, 0.62);
 }
 
 .highlight-strip,
@@ -300,11 +320,15 @@ html[data-theme="dark"] .landing-button {
 
   .hero-panel,
   .section-card {
-    padding: 1.25rem;
+    padding: 1.4rem;
   }
 
   .post .post-title {
     font-size: clamp(2.4rem, 12vw, 3.2rem);
+  }
+
+  .hero-lead {
+    font-size: clamp(1.7rem, 8vw, 2.3rem);
   }
 
   .profile.float-right,

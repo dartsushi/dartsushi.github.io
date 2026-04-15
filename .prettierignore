@@ -1,6 +1,10 @@
 **/*.map
 **/*.min.css
 **/*.min.js
+.bundle
+.gem
+_site
+.jekyll-cache
 assets/css/main.scss
 assets/js/search-data.js
 assets/js/distillpub/template.v2.js

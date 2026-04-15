@@ -6,21 +6,21 @@
     "email": "Atsushi.Ueda@ugent.be",
     "phone": "",
     "url": "https://dartsushi.github.io",
-    "summary": "Postdoc Fellow at Quantum Group",
+    "summary": "FWO junior postdoctoral fellow at Ghent University since October 2025",
     "location": {
       "address": "Krijgslaan 281, building S9",
       "postalCode": "9000",
       "city": "Gent",
       "countryCode": "Belgium",
       "region": "Flanders"
-    },
+    }
   },
   "work": [
     {
       "name": "Ghent University",
-      "position": "Postdoc Fellow",
+      "position": "FWO Junior Postdoctoral Fellow",
       "url": "https://quantumghent.github.io/",
-      "startDate": "2024",
+      "startDate": "2025-10",
       "endDate": "Present",
       "summary": "",
       "highlights": [""]
@@ -32,7 +32,7 @@
       "location": "Tokyo, Japan",
       "studyType": "PhD",
       "startDate": "2021-04-01",
-      "endDate": "2024-03-31",
+      "endDate": "2024-03-31"
     }
   ],
   "awards": [
@@ -55,7 +55,7 @@
       "fluency": "Fluent",
       "icon": ""
     },
-     {
+    {
       "language": "Spanish",
       "fluency": "Conversational",
       "icon": ""
@@ -70,10 +70,7 @@
     {
       "name": "Physics",
       "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Tensor Network",
-        "Quantum Field Theory"
-      ]
+      "keywords": ["Tensor Network", "Quantum Field Theory"]
     }
   ]
 }
