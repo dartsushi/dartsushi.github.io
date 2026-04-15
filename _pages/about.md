@@ -41,7 +41,14 @@ social: true # includes social icons at the bottom of the page
       >
         Google Scholar
       </a>
-      <a class="landing-button" href="mailto:Atsushi.Ueda@ugent.be">Email</a>
+      <a
+        class="landing-button"
+        href="https://inspirehep.net/authors/2791177?ui-citation-summary=true"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        InspireHEP
+      </a>
     </div>
   </section>
 

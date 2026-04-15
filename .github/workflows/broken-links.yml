@@ -48,5 +48,15 @@ jobs:
         uses: lycheeverse/lychee-action@v2.1.0
         with:
           fail: true
-          # removed md files that include liquid tags
-          args: --user-agent 'curl/7.54' --exclude-path README.md --exclude-path _pages/404.md --exclude-path _pages/blog.md --exclude-path _posts/2018-12-22-distill.md --exclude-path _posts/2023-04-24-videos.md --verbose --no-progress './**/*.md' './**/*.html'
+          # limit checks to source files that are part of this website, not inherited template docs
+          # and ignore Jekyll Liquid local links, which lychee sees as literal file paths
+          args: >-
+            --user-agent 'curl/7.54'
+            --exclude '%7B%7B.*(relative_url|absolute_url).*%7D%7D'
+            --exclude-path _pages/404.md
+            --exclude-path _pages/blog.md
+            --verbose
+            --no-progress
+            './_pages/**/*.md'
+            './_news/**/*.md'
+            './assets/html/**/*.html'
