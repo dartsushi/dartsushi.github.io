@@ -33,6 +33,7 @@ social: true # includes social icons at the bottom of the page
     </div>
     <div class="hero-actions">
       <a class="landing-button primary" href="{{ '/publications/' | relative_url }}">Browse papers</a>
+      <a class="landing-button" href="{{ '/cv/' | relative_url }}">Short CV</a>
       <a
         class="landing-button"
         href="https://scholar.google.com/citations?user=l2mt3nEAAAAJ"

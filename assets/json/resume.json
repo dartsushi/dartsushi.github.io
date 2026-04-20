@@ -1,53 +1,112 @@
 {
   "basics": {
     "name": "Atsushi Ueda",
-    "label": "Scientist",
+    "label": "Theoretical Physicist",
     "image": "",
     "email": "Atsushi.Ueda@ugent.be",
     "phone": "",
     "url": "https://dartsushi.github.io",
-    "summary": "FWO junior postdoctoral fellow at Ghent University since October 2025",
+    "summary": "FWO junior postdoctoral fellow working on tensor networks, critical phenomena, and quantum field theory.",
     "location": {
-      "address": "Krijgslaan 281, building S9",
-      "postalCode": "9000",
-      "city": "Gent",
-      "countryCode": "Belgium",
+      "city": "Ghent",
+      "countryCode": "BE",
       "region": "Flanders"
-    }
+    },
+    "profiles": [
+      {
+        "network": "ORCID",
+        "username": "0000-0003-1884-6808",
+        "url": "https://orcid.org/0000-0003-1884-6808"
+      },
+      {
+        "network": "Google Scholar",
+        "username": "l2mt3nEAAAAJ",
+        "url": "https://scholar.google.com/citations?user=l2mt3nEAAAAJ"
+      },
+      {
+        "network": "InspireHEP",
+        "username": "2791177",
+        "url": "https://inspirehep.net/authors/2791177"
+      }
+    ]
   },
   "work": [
     {
+      "name": "FWO / Ghent University",
+      "position": "Junior Postdoctoral Fellow",
+      "url": "https://www.fwo.be/en/",
+      "startDate": "2025-10-01",
+      "endDate": "",
+      "location": "Ghent, Belgium",
+      "summary": "Hosted by the Department of Physics and Astronomy at Ghent University.",
+      "highlights": ["Research on tensor-network methods, critical phenomena, and universal physics in quantum many-body systems."]
+    },
+    {
       "name": "Ghent University",
-      "position": "FWO Junior Postdoctoral Fellow",
+      "position": "Postdoctoral Fellow",
       "url": "https://quantumghent.github.io/",
-      "startDate": "2025-10",
-      "endDate": "Present",
-      "summary": "",
-      "highlights": [""]
+      "startDate": "2024-04-01",
+      "endDate": "2025-09-30",
+      "location": "Ghent, Belgium",
+      "summary": "Department of Physics and Astronomy.",
+      "highlights": ["Worked on tensor-network algorithms, finite-size and finite-entanglement scaling, and lattice and topological systems."]
     }
   ],
   "education": [
     {
-      "institution": "University of Tokyo",
+      "institution": "The University of Tokyo",
       "location": "Tokyo, Japan",
-      "studyType": "PhD",
+      "studyType": "Ph.D. in Physics",
+      "area": "Department of Physics",
+      "url": "https://www.u-tokyo.ac.jp/en/",
       "startDate": "2021-04-01",
-      "endDate": "2024-03-31"
+      "endDate": "2024-03-31",
+      "courses": ["Doctoral research in theoretical physics and tensor-network methods."]
     }
   ],
   "awards": [
     {
-      "title": "The School of Science Encouragement Award(Doctoral Program)",
+      "title": "The School of Science Encouragement Award (Doctoral Program)",
       "date": "2024-03-21",
       "awarder": "The University of Tokyo",
       "url": "https://www.s.u-tokyo.ac.jp/ja/info/10252/",
       "summary": ""
     }
   ],
+  "publications": [
+    {
+      "name": "Chiral edge states emerging on anyon-net",
+      "publisher": "SciPost Physics Core",
+      "releaseDate": "2025-09-30",
+      "url": "https://doi.org/10.21468/SciPostPhysCore.8.3.062",
+      "summary": ""
+    },
+    {
+      "name": "Self-congruent point in critical matrix product states: An effective field theory for finite-entanglement scaling",
+      "publisher": "SciPost Physics",
+      "releaseDate": "2025-04-29",
+      "url": "https://doi.org/10.21468/SciPostPhys.18.4.142",
+      "summary": ""
+    },
+    {
+      "name": "Finite-size scaling on the torus with periodic projected entangled-pair states",
+      "publisher": "Physical Review B",
+      "releaseDate": "2025-04",
+      "url": "https://doi.org/10.1103/PhysRevB.111.165124",
+      "summary": ""
+    },
+    {
+      "name": "Finite-size corrections to the energy spectra of gapless one-dimensional systems in the presence of boundaries",
+      "publisher": "SciPost Physics",
+      "releaseDate": "2024-10-02",
+      "url": "https://doi.org/10.21468/SciPostPhys.17.4.099",
+      "summary": ""
+    }
+  ],
   "languages": [
     {
       "language": "Japanese",
-      "fluency": "Native speaker",
+      "fluency": "Native",
       "icon": ""
     },
     {
@@ -68,9 +127,14 @@
   ],
   "interests": [
     {
-      "name": "Physics",
-      "icon": "fa-solid fa-tag",
-      "keywords": ["Tensor Network", "Quantum Field Theory"]
+      "name": "Research themes",
+      "icon": "fa-solid fa-microscope",
+      "keywords": ["Critical phenomena", "Quantum field theory", "Strongly correlated systems"]
+    },
+    {
+      "name": "Methods",
+      "icon": "fa-solid fa-diagram-project",
+      "keywords": ["Tensor networks", "Renormalization group", "Computational many-body physics"]
     }
   ]
 }
