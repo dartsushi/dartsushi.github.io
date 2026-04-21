@@ -103,28 +103,6 @@
       "summary": ""
     }
   ],
-  "languages": [
-    {
-      "language": "Japanese",
-      "fluency": "Native",
-      "icon": ""
-    },
-    {
-      "language": "English",
-      "fluency": "Fluent",
-      "icon": ""
-    },
-    {
-      "language": "Spanish",
-      "fluency": "Conversational",
-      "icon": ""
-    },
-    {
-      "language": "French",
-      "fluency": "Conversational",
-      "icon": ""
-    }
-  ],
   "interests": [
     {
       "name": "Research themes",
