@@ -3,8 +3,6 @@
   contents:
     - name: Full Name
       value: Atsushi Ueda
-    - name: Languages
-      value: Japanese, English
 
 - title: Education
   type: time_table
