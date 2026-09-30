@@ -42,6 +42,20 @@ The configuration file [\_config.yml](_config.yml) contains the main configurati
 
 All changes made to this file are only visible after you rebuild the website. That means that you need to run `bundle exec jekyll serve` again if you are running the website locally or push your changes to GitHub if you are using GitHub Pages. All other changes are visible immediately, you only need to refresh the page.
 
+## Page-view counter
+
+The small badge above the footer uses [Hits](https://hits.sh/) to store a public total shared across all pages.
+It counts page views from when it is enabled, not unique people, and cannot recover earlier traffic. Repeat visits may count again;
+blocking the badge or a service outage can prevent a view from being recorded.
+
+The `visitor_counter` settings in `_config.yml` control it. Set `enabled: false` to remove the badge and its external request.
+Keep `id: dartsushi.github.io` unchanged to preserve the total. Clicking the badge opens the public statistics page.
+No account, API key, or additional JavaScript is needed. Visitors' browsers request an image from Hits, which handles counting;
+the image request omits the page's referrer. See the provider's [privacy policy](https://hits.sh/privacy/) for its data handling.
+
+The badge is included only when `JEKYLL_ENV=production` (as in the deployment workflow), so ordinary local previews do not add views.
+To preview it, use a production build with a temporary config override setting `visitor_counter.id` to a separate test ID.
+
 ## Modifying the CV information
 
 There are currently 2 different ways of generating the CV page content. The first one is by using a json file located in [assets/json/resume.json](assets/json/resume.json). It is a [known standard](https://jsonresume.org/) for creating a CV programmatically. The second one, currently used as a fallback when the json file is not found, is by using a yml file located in [\_data/cv.yml](_data/cv.yml). This was the original way of creating the CV page content and since it is more human readable than a json file we decided to keep it as an option.

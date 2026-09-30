@@ -1,0 +1,18 @@
+{% if site.visitor_counter.enabled and jekyll.environment == 'production' %}
+  <div class="container visitor-counter">
+    <a
+      href="https://hits.sh/{{ site.visitor_counter.id | escape }}/"
+      target="_blank"
+      rel="noopener noreferrer"
+      title="Total site page views since this counter was added; repeat visits may count again. View statistics on Hits."
+    >
+      <img
+        src="https://hits.sh/{{ site.visitor_counter.id | escape }}.svg?label=page%20views&amp;color=0f766e&amp;labelColor=334155"
+        alt="Site page views — view counter statistics"
+        height="20"
+        decoding="async"
+        referrerpolicy="no-referrer"
+      >
+    </a>
+  </div>
+{% endif %}

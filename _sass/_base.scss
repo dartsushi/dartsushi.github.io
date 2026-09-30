@@ -472,6 +472,18 @@ ul.task-list input[type="checkbox"] {
 }
 
 // Footer
+.visitor-counter {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+
+  img {
+    height: 20px;
+    width: auto;
+    vertical-align: middle;
+  }
+}
+
 footer.fixed-bottom {
   background-color: var(--global-footer-bg-color);
   font-size: 0.75rem;
