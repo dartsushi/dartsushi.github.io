@@ -1,2 +1,5 @@
 linkedin.com
 reddit.com
+
+# Verified APS publication URL returns HTTP 403 to the GitHub Actions link checker.
+^https://journals\.aps\.org/prresearch/abstract/10\.1103/2v9h-25qs$

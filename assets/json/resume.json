@@ -75,6 +75,20 @@
   ],
   "publications": [
     {
+      "name": "Emergent Andreev reflection from a lattice duality defect",
+      "publisher": "Physical Review Letters",
+      "releaseDate": "2026-09-29",
+      "url": "https://doi.org/10.1103/h1rv-bv9y",
+      "summary": ""
+    },
+    {
+      "name": "Perfect particle transmission through duality defects",
+      "publisher": "Nature Physics",
+      "releaseDate": "2026-08-07",
+      "url": "https://doi.org/10.1038/s41567-026-03390-5",
+      "summary": ""
+    },
+    {
       "name": "Chiral edge states emerging on anyon-net",
       "publisher": "SciPost Physics Core",
       "releaseDate": "2025-09-30",

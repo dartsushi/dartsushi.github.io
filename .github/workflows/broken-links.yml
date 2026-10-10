@@ -6,6 +6,7 @@ on:
       - master
       - main
     paths:
+      - ".lycheeignore"
       - "assets/**"
       - "**.html"
       - "**.js"
@@ -24,6 +25,7 @@ on:
       - master
       - main
     paths:
+      - ".lycheeignore"
       - "assets/**"
       - "**.html"
       - "**.js"
