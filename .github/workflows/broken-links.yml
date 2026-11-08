@@ -46,19 +46,32 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Install link checker
+        env:
+          LYCHEE_VERSION: v0.17.0
+        run: |
+          mkdir -p "$RUNNER_TEMP/lychee"
+          curl --fail --show-error --location \
+            --retry 3 --retry-all-errors --retry-delay 5 \
+            --connect-timeout 15 --max-time 120 \
+            --output "$RUNNER_TEMP/lychee.tar.gz" \
+            "https://github.com/lycheeverse/lychee/releases/download/lychee-${LYCHEE_VERSION}/lychee-x86_64-unknown-linux-gnu.tar.gz"
+          tar -xzf "$RUNNER_TEMP/lychee.tar.gz" -C "$RUNNER_TEMP/lychee"
+
       - name: Link Checker 🔗
-        uses: lycheeverse/lychee-action@v2.1.0
-        with:
-          fail: true
-          # limit checks to source files that are part of this website, not inherited template docs
-          # and ignore Jekyll Liquid local links, which lychee sees as literal file paths
-          args: >-
-            --user-agent 'curl/7.54'
-            --exclude '%7B%7B.*(relative_url|absolute_url).*%7D%7D'
-            --exclude-path _pages/404.md
-            --exclude-path _pages/blog.md
-            --verbose
-            --no-progress
-            './_pages/**/*.md'
-            './_news/**/*.md'
-            './assets/html/**/*.html'
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        # Limit checks to website sources and ignore unrendered Jekyll Liquid links.
+        run: |
+          "$RUNNER_TEMP/lychee/lychee" \
+            --format markdown --output "$GITHUB_STEP_SUMMARY" \
+            --user-agent 'curl/7.54' \
+            --exclude '%7B%7B.*(relative_url|absolute_url).*%7D%7D' \
+            --exclude-path _pages/404.md \
+            --exclude-path _pages/blog.md \
+            --verbose --no-progress \
+            './_pages/**/*.md' './_news/**/*.md' './assets/html/**/*.html'
+          if grep -Eq 'Total[[:space:]]*\|[[:space:]]*0' "$GITHUB_STEP_SUMMARY"; then
+            echo "::error::No links were found. Check the link-checker input paths."
+            exit 1
+          fi
